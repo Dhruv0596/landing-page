@@ -1,0 +1,877 @@
+<html>
+    <head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+<style>
+  .col-lg-3{
+    position: relative;
+  }
+.radialProgressBar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.progress-50 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(31deg, #f59e1d 50%, transparent 50%), linear-gradient(267deg, #f59e1d 50%, #ddd 50%)
+}
+.progress-185 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(121deg, #1db5af 50%, transparent 50%), linear-gradient(412deg, #1db5af 50%, #ddd 50%);
+}
+.progress-202 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(232deg, #f59e1d 50%, transparent 50%), linear-gradient(412deg, #f59e1d 50%, #ddd 50%);}
+   
+    .progress-156 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(121deg, #fff 50%, transparent 50%), linear-gradient(412deg, #fff 50%, #ddd 50%);
+}
+   
+.progress-312 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(232deg, #f59e1d 50%, transparent 50%), linear-gradient(412deg, #f59e1d 50%, #ddd 50%);}
+
+    .progress-412 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(122deg, #fff 50%, transparent 50%), linear-gradient(447deg, #ddd 50%, #ddd 50%);
+}
+.progress-366 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(70deg, #f59e1d 50%, transparent 50%), linear-gradient(383deg, #f59e1d 50%, #ddd 50%)
+}
+.progress-633 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(54deg, #e73e26 50%, transparent 50%), linear-gradient(451deg, #e73e26 50%, #ddd 50%);
+}
+.progress-3200 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(23deg, #3a97c2 50%, transparent 50%), linear-gradient(451deg, #3a97c2 50%, #ddd 50%);
+}
+.progress-3201 {
+    background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(146deg, #1eb4b2 50%, transparent 50%), linear-gradient(410deg, #ddd 50%, #ddd 50%);
+}
+    .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    padding-top: 30%;
+    background: linear-gradient(72deg, #2B80AE, #203d75);
+    color: #fff;
+}
+    body{
+        padding-top: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .admin_image img{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.before_backround_color::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 13px;
+    width: 50px;
+    height: 2px;
+    background-color: #1abc9c;
+}
+
+.col-lg-3{
+    position: relative;
+}
+.four_section{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    color: #fff;
+}
+.my_referncer{
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 14px;
+}
+.my_profile_title h6 {
+    color: #fff;
+    padding-bottom: 11px;
+    font-size: 13px;
+}
+.main_as{
+    position: absolute;
+    left: -20px;
+}
+.my_profile_title h6{
+color: #fff;
+}
+.box-border{
+        border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+}
+.background_color_section{
+    background: linear-gradient(72deg, #2B80AE, #203d75);
+        padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.background_color_section p{
+    color:#fff;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.Your_score{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 14px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.just_a{
+    display: grid;
+    align-content: center;
+}
+.logo{
+margin-bottom: 50px ;
+}
+.admin_first{
+    margin-bottom: 40px;
+}
+.my_dashbaord{
+    margin-bottom: 30px;
+}
+.dashbaord_title h6{
+    position: relative;
+}
+.dashbaord_title h6:before{
+    content: '';
+    position: absolute;
+    /* top: 0px; */
+    bottom: -18px;
+    width: 32px;
+    height: 3px;
+    background: #0082fb;
+}
+.top{
+        position: absolute;
+        top: -2px;
+    left: 11px;
+    }
+    .mask {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.semi-circle {
+    background: linear-gradient(127deg, #db5833, #55aca1 );
+}
+.semi-circle {
+    position: relative;
+    display: block;
+    width: 14.5rem;
+    height: 7.25rem;
+    border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}.semi-circle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 8.75rem;
+    height: 4.375rem;
+    margin-left: -4.375rem;
+    background: linear-gradient(72deg, #2B80AE, #203d75); 
+    border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
+}.semi-circle--mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: transparent;
+    transform: rotate(120deg) translate3d(0, 0, 0);
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.section_section_image{
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 14px;
+}
+.section_section_image svg{
+    position: absolute;
+    top: 84px;
+    left: 53%;
+    z-index: 2;
+    transform: rotate(61deg);
+}
+.before_backround_color.gonner::before{
+    background-color: #e93e24;
+}
+.before_backround_color.network::before{
+    background-color: #f5a124;
+}
+.my_scrore_title h6{
+    color: #fff;
+    font-size: 13px;
+}
+.my_scrore_title_1{    
+    position: absolute;
+    bottom: 3px;
+    left: -10px;
+color: #fff;
+}
+.process_bar p{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.progress-bar {
+    background-color: #e5af0c;
+}
+.thrid_background{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    background: #e5af0c;
+}
+.network_title{
+        text-align: center;
+}
+.network_title p{
+    font-size: 10px;
+    padding-top: 4px;
+}
+.network_title h6{
+    text-align: center;
+    border: 1px solid #48bd48;;
+    border-radius: 5px;
+    padding: 8px;
+    width: 75px;
+    margin: 0 auto;
+    color: #fff;
+}
+.column {
+  height: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.legend {
+  flex-shrink: 3;
+}
+.piechart1 {
+  --value: 50%;
+  --hole: 60%;
+  --size: 106;
+  --color: red;
+  --track: silver;
+  width: var(--size, 10em);
+  height: var(--size, 10em);
+  border-radius: 50%;
+  background-color: yellow;
+  background: radial-gradient(
+      /* inner circle */ circle closest-side,
+      white 0,
+      white var(--hole, 50%),
+      transparent 0%
+    ),
+    conic-gradient(
+      /* outer dial */ var(--color, red) 0%,
+      var(--color, red) var(--value, 50%),
+      blue 50%,
+      blue 80%,
+      transparent 0%
+    ),
+    var(--track, silver);
+}
+
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 6rem;
+  --fg: #f59e1d;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage);
+}
+.border-title{
+    text-align: center;
+    border:1px solid #fff;
+    margin-top:10px;
+    color: #ffc107;
+    border-radius: 3px;
+}
+.text_align_top{
+    text-align: center;
+    padding-top: 10px;
+}
+.Weak{
+    color:#fff;
+    margin-bottom: 0px;
+}
+.Storng{
+    color:#fff;
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+    margin-bottom: 0px;
+}
+.col-lg-4{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.Network_statue{
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 14px;
+}
+.border-bottom_a{
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    height: 136px;
+    border-radius: 5px;
+    position: relative;
+}
+.botder-bottom_asddddd p{
+    font-size: 36px;
+    position: absolute;
+    bottom: -15px;   
+}
+.thrid_border-ask .border-title{
+    margin-top: 0px;
+}
+.thrid_border-ask{
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.thrid_border-ask p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 3px;
+    font-size: 11px;
+}
+.dashbaord_title h6.xxxxx:before{
+    background: #fd0000;
+}
+.dashbaord_title h6.network_lico_color:before{
+    background: #f8a52e;
+}
+.dashbaord_title h6.perform_color:before{
+    background: #22b1ac;
+}
+.before_backround_color::nth-child(2):before {
+    background-color: #e93e24;
+}
+</style>
+    </head>
+    <body>
+<section class="leading_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3" style="border-right:1px solid #f5f5f5">
+<div class="logo">
+<h4 class="text-left">Logo</h4>
+</div>
+<div class="row admin_first">
+    <div class="col-lg-4">
+       <div class="admin_image"> <img src="image_icon/image/Picture3.png" width="90" height="90"></div>
+    </div>
+    <div class="col-lg-6 just_a">
+        <div class="admin_name">
+            <h3>Julie</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row my_dashbaord">
+  <div class="col-lg-3">
+
+<div class="dashbaord_image">
+    <img src="image_icon/icon/Asset 1.png" width="54">
+</div>
+</div>
+<div class="col-lg-7 just_a">
+    <div class="dashbaord_title">
+        <h6 class="border_">My Dashbaord</h6>
+    </div>
+</div>
+  </div> 
+  
+  
+  <div class="row my_dashbaord">
+    <div class="col-lg-3">
+  
+  <div class="dashbaord_image">
+      <img src="image_icon/icon/Asset 1.png">
+  </div>
+  </div>
+  <div class="col-lg-7 just_a">
+      <div class="dashbaord_title">
+          <h6>My Profile</h6>
+      </div>
+  </div>
+    </div> 
+
+
+    <div class="row my_dashbaord">
+        <div class="col-lg-3">
+      
+      <div class="dashbaord_image">
+          <img src="image_icon/icon/icon11.png" width="54">
+      </div>
+      </div>
+      <div class="col-lg-7 just_a">
+          <div class="dashbaord_title">
+              <h6 class="xxxxx">XXXXXXXX</h6>
+          </div>
+      </div>
+        </div> 
+
+
+        <div class="row my_dashbaord">
+            <div class="col-lg-3">
+          
+          <div class="dashbaord_image">
+              <img src="image_icon/icon/icon12.png" width="54">
+          </div>
+          </div>
+          <div class="col-lg-7 just_a">
+              <div class="dashbaord_title">
+                  <h6 class="network_lico_color">My Network</h6>
+              </div>
+          </div>
+            </div> <div class="row my_dashbaord">
+                <div class="col-lg-3">
+              
+              <div class="dashbaord_image">
+                  <img src="image_icon/icon/icon13.png" width="54">
+              </div>
+              </div>
+              <div class="col-lg-7 just_a">
+                  <div class="dashbaord_title">
+                      <h6 class="perform_color">My Perfomance</h6>
+                  </div>
+              </div>
+                </div> 
+</div>
+<div class="col-lg-9">
+<div class="second_image_section">
+    <img src="image_icon/icon/Asset 5.png" width="100%" height="">
+</div>
+<div class="title_se" style="padding-top:5px;padding-bottom: 10px;">
+    <h6>My Rankings : Senior Piping Engineer </h6>
+</div>
+
+<div class="background_color_section">
+    <div class="Your_score">
+<div class="row">
+    <div class="col-lg-9">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="border-bottom_a">
+                    <div class="first_as_title">
+                        <h6>Per Group Overall Total</h6>
+                        </div>
+                        <div class="botder-bottom_asddddd">
+                            <p>427</p>
+                            </div>
+                    </div>
+                </div>
+            <div class="col-lg-6">
+                <div class="border-bottom_a">
+                    <div class="first_as_title">
+                        <h6 style="text-align: right;">My Network PEER Group Ranking</h6>
+                        </div>
+                        <div class="botder-bottom_asddddd">
+                            <p style="right: 11px;">3rd</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                <div class="border-bottom_a">
+                    <div class="first_as_title">
+                        <h6 >My Profile Status</h6>
+                        </div>
+                        <div class="botder-bottom_asddddd">
+                            <p style="color: #fbc809;">HIGH</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                <div class="border-bottom_a">
+                    <div class="first_as_title">
+                        <h6 style="text-align: right; width: 222px;position: relative;left: 29px;">My network PEER Group Leader</h6>
+                        </div>
+                        <div class="botder-bottom_asddddd">
+                            <p style="text-align: right;right: 11px;">23rd</p>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="radialProgressBar progress-633" style="width: 164px;height: 164px;position: absolute;top: 81px;left: 206px;">
+          <div class="overlay" style="width: 106px;height: 106px;color: #fbc809;font-size: 31px;padding-top: 19%;">59th</div>
+        </div>        </div>
+    <div class="col-lg-3" style="border-left: 2px solid #fff;">
+        <div class="thrid_border-ask">
+            <p>My(Profile(s) Issued)</p>
+            <div class="radialProgressBar progress-3200" style="width: 48px;height: 48px;margin:auto;">
+          <div class="overlay" style="width:30px;height: 30px;font-size: 13px;position: relative;padding-top: 6px;">25</div>
+        </div>            <p class="text_align_top">PEER Group Averages</p>
+            <div class="border-title">65</div>
+            </div>
+            <div class="thrid_border-ask">
+            <p>My(Profile(s) Issued)</p>
+            <div class="radialProgressBar progress-3201" style="width: 48px;height: 48px;margin:auto;">
+          <div class="overlay" style="width:30px;height: 30px;font-size: 13px;position: relative;padding-top: 6px;">62</div>
+        </div>                 <p class="text_align_top">PEER Group Averages</p>
+            <div class="border-title">135</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Your_score">
+    <img src="sddds-removebg-preview.png" width="100%">
+    </div>
+    <div class="Your_score">
+        <p>Your Scores VS Maximum Available Score</p>
+<div class="row">
+    <div class="col-lg-2"><div class="radialProgressBar progress-50">
+          <div class="overlay">185</div>
+        </div>
+    <div class="border-title">362</div>
+    <p class="text_align_top">PRIMARY JOB TITLE</p>
+    </div>
+    <div class="col-lg-2"><div class="radialProgressBar progress-185">
+          <div class="overlay">185</div>
+        </div>
+    <div class="border-title" style="color:#1db5af">362</div>
+    <p class="text_align_top">EXERIENCE</p>
+    </div>
+    
+    <div class="col-lg-2"><div class="radialProgressBar progress-202">
+          <div class="overlay">202</div>
+        </div>
+    <div class="border-title">302</div>
+    <p class="text_align_top">QUALIFICATIONS</p>
+    </div>
+    <div class="col-lg-2">
+        <div class="radialProgressBar progress-156">
+          <div class="overlay">156</div>
+        </div>
+     <div class="border-title" style="color:#fff">200</div>
+    <p class="text_align_top">TRANING</p>
+    </div>
+    <div class="col-lg-2"><div class="radialProgressBar progress-312">
+          <div class="overlay">312</div>
+        </div>
+    <div class="border-title">412</div>
+    <p class="text_align_top">SYSTEMS</p>
+    </div>
+    <div class="col-lg-2"><div class="radialProgressBar progress-412">
+          <div class="overlay">202</div>
+        </div>
+    <div class="border-title" style="color: #fff;">302</div>
+    <p class="text_align_top">COMPETENCIES</p>
+    </div>
+    </div>
+
+</div>
+
+<div class="row" style="padding-left: 8px;padding-right: 8px;">
+    <div class="col-lg-4">
+        <div class="box-border">
+            <div class="my_profile_title">
+                <h6>My Profile Statue</h6>
+            </div>
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div  class="col-lg-9" style="text-align: center;">
+                        <div class="my_profile_image">
+                            <img src="image_icon/icon/Asset 6.png">
+                        </div>
+                        <div class="my_profile_description">
+                            <p>Agencies</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="main_as">
+                    <div class="my_p_nmer">
+                        <img src="hexagon-geometrical-shape-outline.png" width="35">
+                    </div>
+                    <p class="top">15</p>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-6">
+                <div class="row">
+                    <div  class="col-lg-9" style="text-align: center;">
+                        <div class="my_profile_image">
+                            <img src="image_icon/icon/Asset 7.png">
+                        </div>
+                        <div class="my_profile_description">
+                            <p>Companies</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="main_as">
+                    <div class="my_p_nmer">
+                        <img src="hexagon-geometrical-shape-outline.png" width="35">
+                    </div>
+                    <p class="top">21</p>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-6">
+                <div class="row">
+                    <div  class="col-lg-9" style="text-align: center;">
+                        <div class="my_profile_image">
+                            <img src="image_icon/icon/Asset 9.png">
+                        </div>
+                        <div class="my_profile_description">
+                            <p>Organisations</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="main_as">
+                    <div class="my_p_nmer">
+                        <img src="hexagon-geometrical-shape-outline.png" width="35">
+                    </div>
+                    <p class="top" style="left: 14px;">3</p>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-6">
+                <div class="row">
+                    <div  class="col-lg-9" style="text-align: center;">
+                        <div class="my_profile_image">
+                            <img src="image_icon/icon/Asset 8.png" >
+                        </div>
+                        <div class="my_profile_description">
+                            <p>Individuals</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="main_as">
+                    <div class="my_p_nmer">
+                        <img src="hexagon-geometrical-shape-outline.png" width="35">
+                    </div>
+                    <p class="top">17</p>
+                    </div>
+                    </div>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div class="section_section_image">
+            <div class="sec_title_loop">
+<p>My Systems Experience</p>
+            </div>
+            <div class="mask">
+                <div class="semi-circle"></div>
+                <div class="semi-circle--mask"></div>
+            </div>
+            <svg width="30" height="100" id="needle" viewBox="0 0 30 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15.2089" cy="128.608" r="10.9086" fill="#4370a9" stroke="#f59e1d" stroke-width="7"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3486 0.920656L25.3277 127.679L25.3166 127.679C25.322 127.833 25.3239 127.988 25.322 128.144C25.2587 133.535 20.8377 137.853 15.4474 137.79C10.0571 137.726 5.73875 133.305 5.80203 127.915C5.80386 127.759 5.80934 127.604 5.81838 127.45L5.80766 127.45L17.3486 0.920656ZM19.2238 134.487C22.4036 132.316 23.2212 127.978 21.0498 124.798C18.8784 121.618 14.5404 120.801 11.3606 122.972C8.18076 125.144 7.36323 129.482 9.53459 132.661C11.706 135.841 16.044 136.659 19.2238 134.487Z" fill="#fff" ></path>
+                <defs>
+                  <linearGradient id="paint0_linear_498_1180" x1="8.57715" y1="129.079" x2="18.8019" y2="129.199" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.6874" stop-color="#3F4142"></stop>
+                    <stop offset="0.6875" stop-color="#2C2C2C"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <p class="Weak">Weak</p>
+              <p class="Storng">Storng</p>
+
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="thrid_background">
+            <div class="thrid_t">
+<p>My Network Location</p>
+            </div>
+            <div class="map_image">
+                <img src="pngimg.com - world_map_PNG28.png" width="100%" height="148">
+            </div>
+        </div>
+        <div class="Network_statue">
+        <div class="network_title">
+            <p style="    font-size: 13px;">My Network Title</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="network_title">
+                    <h6 style="border: 2px solid #2b82b3;">43</h6>
+                    <p>My Network Total</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="network_title">
+                    <h6 style="border: 2px solid #d24225;">9</h6>
+                    <p>Primary Job Title</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="network_title">
+                    <h6 style="border: 2px solid #c18b3a;">1</h6>
+                    <p>Secondary Job Title</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="network_title">
+                    <h6 border: 2px solid #1ea5a9;>7</h6>
+                    <p>Seeking Employment</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="four_section">
+            <div class="my_scrore_title">
+                <h6>My Score v's My Network PEERs</h6>
+                <img src="scdscdsc.jpg" width="100%">
+            </div>
+            </div>
+           <div class="my_referncer">
+            <div class="my_scrore_title">
+                <h6>My References</h6>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="radialProgressBar progress-366">
+          <div class="overlay"></div>
+        </div>
+                    </div>
+                <div class="col-lg-6" style="position: relative;">
+                    <div class="my_scrore_title_1">
+                        <h6>References Received</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="process_bar">
+            <p>75%</p>
+            <div class="progress" style="height:20px">
+                <div class="progress-bar" style="width:60%;height:30px"></div>
+              </div>
+           </div>
+           </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 20px;">
+<div class="col-lg-3">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="image_icon/icon/icon13.png" width="60">
+            </div>
+            <div class="col-lg-8" style="position: relative;">
+                <h6 class="before_backround_color">My <br>Profile</h6>
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="image_icon/icon/icon11.png" width="60">
+            </div>
+            <div class="col-lg-8" style="position: relative;">
+                <h6 class="before_backround_color gonner">goneet <br><span class="span_lat_sdd">PRO</span></h6>
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="image_icon/icon/icon12.png" width="60">
+            </div>
+            <div class="col-lg-8" style="position: relative;">
+                <h6 class="before_backround_color network">My <br>Network</h6>
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="image_icon/icon/icon13.png" width="60">
+            </div>
+            <div class="col-lg-8" style="position: relative;">
+                <h6 class="before_backround_color Perfomance">My <br>Perfomance</h6>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+            </div>
+            </div>
+        </div>
+
+</section>
+        
+    </body>
+</html>
